@@ -1,0 +1,58 @@
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  outline: 4px solid var(--bg, red);
+  outline-offset: -5px;
+}
+
+section:nth-of-type(even) {
+  background: hsl(240 60% 97%);
+}
+
+section:last-of-type {
+  margin-bottom: 100vh;
+}
+
+[class^="ball-"] {
+  height: 15vmin;
+  width: 15vmin;
+  border-radius: 50%;
+  background: var(--bg, red);
+}
+
+#section-2 {
+  --bg: purple;
+}
+
+#section-3,
+#section-4,
+#section-5 {
+  justify-content: center;
+  gap: 2rem;
+}
+
+#section-3 {
+  --bg: cornflowerblue;
+}
+
+#section-4 {
+  --bg: orangered;
+}
+
+#section-5 {
+  --bg: lightpink;
+}
+
+.ball-5.active {
+  background: green;
+}
+
+#section-3 {
+  justify-content: flex-start;
+}
+
+.ball-3 {
+  border-radius: 2rem;
+}
